@@ -1,0 +1,22 @@
+# Application-specific settings
+server.port=8088
+spring.application.name=SERVICE-CLIENT
+
+# Eureka client configuration
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+
+# Logging level for debugging
+logging.level.com.netflix.eureka=DEBUG
+logging.level.com.netflix.discovery=DEBUG
+
+# H2 database configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# JPA/Hibernate settings
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
